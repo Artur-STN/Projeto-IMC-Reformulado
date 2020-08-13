@@ -1,8 +1,8 @@
 function imc() {
-    
+
     let altura = document.getElementById('input-altura').value
     let peso = document.getElementById('input-peso').value
-    
+
     let numero = document.getElementById('p-res-num')
     let texto = document.getElementById('p-res-txt')
 
@@ -68,13 +68,17 @@ function imc() {
 
     }
 
-    p_calculo.innerHTML = `Primeiro foi pego a sua altura e multiplicou por ela mesma:
+    if (altura != '' && peso != '') {
+
+        p_calculo.innerHTML = `Primeiro foi pego a sua altura e multiplicou por ela mesma:
                         <br>(${altura} * ${altura})
                         <br>Depois  foi pego o seu peso e dividiu pelo
                         <br>o resultado da multiplicação da sua altura
                         <br>${peso} / (${altura} * ${altura})
                         <br>E com base na tabela acima foi constatado que:
                         <br>${resultado}`
+
+    }
 
 }
 
@@ -84,9 +88,9 @@ function limpar_dados() {
 
     let p_num = document.getElementById('p-res-num')
     let p_txt = document.getElementById('p-res-txt')
-    
+
     let p_calculo = document.getElementById('p-mostra-calculo')
-    
+
     altura.value = ''
     peso.value = ''
 
@@ -94,4 +98,5 @@ function limpar_dados() {
     p_txt.innerHTML = ''
 
     p_calculo.innerHTML = ''
+
 }

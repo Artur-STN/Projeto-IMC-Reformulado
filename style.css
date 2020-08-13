@@ -38,6 +38,7 @@ body {
     color: #015249;
 
     margin: auto;
+    width: 100%;
 
     border-bottom: #00332d solid 1px;
 }
@@ -213,7 +214,7 @@ button:hover {
     font-size: 3rem;
 }
 
-@media(max-width: 800px) {
+@media(max-width: 1000px) {
     #titulo {
         font-size: 2rem;
     }
