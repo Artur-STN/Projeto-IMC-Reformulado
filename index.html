@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="style.css">
+
+        <script src="script.js"></script>
+
+        <title>Índice de Massa Corporal</title>
+
+    </head>
+
+    <body>
+
+        <div id="titulo">
+
+            <h1 class="h1-titulo">Calculo de IMC</h1>
+            <p class="p-titulo">(Calculo Simples)</p>
+
+        </div>
+
+        <div class="tabela">
+
+            <table id="tabela">
+
+                <caption>Tabela de Índice de Massa Corporal</caption>
+
+                <tr> <td> Desnutrido </td> <td>Abaixo de 18,5</td> </tr>
+                <tr> <td> Peso Adequado </td> <td>18,5 até 24,9</td> </tr>
+                <tr> <td> Sobrepeso </td> <td>25 até 29,9</td> </tr>
+                <tr> <td> Obesidade Grau I </td> <td>30 até 34,9</td> </tr>
+                <tr> <td> Obesidade Grau II </td> <td>35 até 39.9</td> </tr>
+                <tr> <td> Obesidade Grau III </td> <td>De 40 pra cima</td> </tr>
+
+            </table>
+
+        </div>
+
+        <div class="calculo">
+
+            <div class="dados">
+
+                <p class="p-altura">Sua altura: </p> <input placeholder="Em metros" type="number" name="input-altura" id="input-altura">
+
+                <p class="p-peso">Seu peso: </p> <input placeholder="Em Quilograma" type="number" name="input-peso" id="input-peso">
+
+                <div class="botoes">
+
+                    <button class="bt-calcular" onclick="imc()">Calcular</button>
+
+                    <button class="bt-limpar" onclick="limpar_dados()">Limpar Dados</button>
+
+                </div>
+
+                <p id="p-res-num"></p>
+
+                <p id="p-res-txt"></p>
+
+            </div>
+
+            <div class="como-ehcalculado">
+
+                <h1 class="h1-mostra-calculo">Como é feito o calculo do IMC?</h1>
+                
+                <p id="p-mostra-calculo"></p>
+
+            </div>
+
+        </div>
+
+    </body>
+
+</html>
