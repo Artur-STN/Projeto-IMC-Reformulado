@@ -44,7 +44,7 @@ body {
 }
 
 .calculo {
-    width: 86rem;
+    width: 83rem;
     height: 37rem;
 
     margin: auto;
@@ -231,6 +231,7 @@ button:hover {
 
     #tabela{
         margin: auto;
+        margin-top: 2rem;
     }
 
     .dados{
@@ -240,7 +241,7 @@ button:hover {
 
     .como-ehcalculado {
         margin-top: 2rem;
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
         
         width: 40rem;
     }
