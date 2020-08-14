@@ -18,13 +18,31 @@
     font-family: 'T-Regular';
 }
 
+:root {
+    --cor-fundo: #0000007e;
+    --cor-txt: #ffffff;
+
+    --cor-botao-txt: #ffffff;
+    --cor-botao-fundo: #777777;
+
+    --cor-input-botao: #00000079;
+    --cor-input-txt: #ffffff;
+
+    --cor-borda: #000000;
+
+    --cor-captio-txt: #ffffff;
+    --cor-caption-fundo: #242424;
+
+    --cor-shadow-txt: #000000;
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
-    background: #57bc906c;
+    background: var(--cor-fundo);
 }
 
 #titulo {
@@ -32,19 +50,19 @@ body {
     font-size: 3rem;
 
     text-align: center;
-    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px var(--cor-shadow-txt);
 
-    background: #57BC90;
-    color: #015249;
+    background: var(--cor-fundo);
+    color: var(--cor-txt);
 
     margin: auto;
     width: 100%;
 
-    border-bottom: #00332d solid 1px;
+    border-bottom: var(--cor-borda) solid 1px;
 }
 
 .calculo {
-    width: 83rem;
+    width: 85rem;
     height: 37rem;
 
     margin: auto;
@@ -59,8 +77,8 @@ body {
     font-family: 'o';
     font-size: 2rem;
 
-    background: #57BC90;
-    color: #00332d;
+    background: var(--cor-fundo);
+    color: var(--cor-txt);
 
     margin: auto;
 
@@ -69,12 +87,12 @@ body {
     width: 40rem;
     height: 27rem;
 
-    border: #00332d 2px solid;
+    border: var(--cor-borda) 2px solid;
     border-spacing: 0;
 }
 
 #tabela td {
-    border: #00332d 1px solid;
+    border: var(--cor-borda) 1px solid;
 
     text-align: center;
 
@@ -84,10 +102,10 @@ body {
 }
 
 #tabela caption {
-    background: #00332d;
-    color: #57BC90;
+    background: var(--cor-caption-fundo);
+    color: var(--cor-captio-txt);
 
-    border: #00332d 2px solid;
+    border: var(--cor-borda) 2px solid;
 }
 
 .dados {
@@ -95,16 +113,16 @@ body {
     font-size: 3rem;
 
     text-align: center;
-    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px var(--cor-txt-shadow);
 
-    background: #57BC90;
-    color: #015249;
+    background: var(--cor-fundo);
+    color: var(--cor-txt);
 
-    width: 40rem;
+    width: 43rem;
 
     margin: 0;
 
-    border: #00332d solid 1px;
+    border: var(--cor-borda) solid 1px;
 }
 
 input {
@@ -116,44 +134,60 @@ input {
     height: 3.5rem;
     width: 30rem;
 
-    background: #01524979;
-    color: #015249;
+    background: var(--cor-input-botao);
+    color: var(--cor-input-txt);
 
     outline: none;
 
-    border: 1px solid #00332d;
+    border: 1px solid var(--cor-borda);
 }
 
 ::-webkit-input-placeholder {
-    color: #015249;
+    color: var(--cor-txt);
 }
 
 :-moz-placeholder {
-    color: #015249;
+    color: var(--cor-txt);
 }
 
 ::-moz-placeholder {
-    color: #015249;
+    color: var(--cor-txt);
 }
 
 :-ms-input-placeholder {
-    color: #015249;
+    color: var(--cor-txt);
 }
 
 input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none;
-
 }
 
 input[type=number] {
     -moz-appearance: textfield;
     appearance: textfield;
+}
 
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+input:focus:-moz-placeholder {
+    /* Firefox 18- */
+    color: transparent;
+}
+
+input:focus::-moz-placeholder {
+    /* Firefox 19+ */
+    color: transparent;
+}
+
+input:focus:-ms-input-placeholder {
+    color: transparent;
 }
 
 button {
-    background: #015249;
-    color: #57BC90;
+    background: var(--cor-botao-fundo);
+    color: var(--cor-botao-txt);
 
     font-family: 'O';
     font-size: 2rem;
@@ -167,7 +201,7 @@ button {
 
     border: none;
     border-radius: 10px;
-    box-shadow: 1px 1px 1px 1px #00332d;
+    box-shadow: 1px 1px 1px 1px var(--cor-borda);
 }
 
 .bt-calcular {
@@ -185,8 +219,8 @@ button {
 }
 
 button:hover {
-    background: #57BC90;
-    color: #015249;
+    background: var(--cor-fundo);
+    color: var(--cor-txt);
 
     border: solid 1px;
 
@@ -197,17 +231,17 @@ button:hover {
     font-family: 't-regular';
 
     text-align: center;
-    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px var(--cor-txt-shadow);
 
-    background: #57BC90;
-    color: #015249;
+    background: var(--cor-fundo);
+    color: var(--cor-txt);
 
     width: 86rem;
 
     margin: auto;
     margin-bottom: 2rem;
 
-    border: #00332d solid 1px;
+    border: var(--cor-borda) solid 1px;
 }
 
 .como-ehcalculado h1 {
@@ -225,16 +259,16 @@ button:hover {
 
     .calculo {
         display: inline;
-        
+
         margin: auto;
     }
 
-    #tabela{
+    #tabela {
         margin: auto;
         margin-top: 2rem;
     }
 
-    .dados{
+    .dados {
         margin: auto;
         margin-top: 2rem;
     }
@@ -242,7 +276,7 @@ button:hover {
     .como-ehcalculado {
         margin-top: 2rem;
         margin-bottom: 3rem;
-        
+
         width: 40rem;
     }
 }
