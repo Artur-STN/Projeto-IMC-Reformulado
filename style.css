@@ -43,6 +43,18 @@ body {
     border-bottom: #00332d solid 1px;
 }
 
+.calculo {
+    width: 86rem;
+    height: 37rem;
+
+    margin: auto;
+    margin-top: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 #tabela {
     font-family: 'o';
     font-size: 2rem;
@@ -51,12 +63,11 @@ body {
     color: #00332d;
 
     margin: auto;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
 
     padding: 0;
 
     width: 40rem;
+    height: 27rem;
 
     border: #00332d 2px solid;
     border-spacing: 0;
@@ -79,12 +90,6 @@ body {
     border: #00332d 2px solid;
 }
 
-.calculo {
-    width: 86rem;
-
-    margin: auto;
-}
-
 .dados {
     font-family: 't-regular';
     font-size: 3rem;
@@ -95,10 +100,9 @@ body {
     background: #57BC90;
     color: #015249;
 
-    width: 35rem;
-    margin: auto;
+    width: 40rem;
 
-    float: left;
+    margin: 0;
 
     border: #00332d solid 1px;
 }
@@ -198,10 +202,10 @@ button:hover {
     background: #57BC90;
     color: #015249;
 
-    width: 50rem;
-    margin: auto;
+    width: 86rem;
 
-    float: right;
+    margin: auto;
+    margin-bottom: 2rem;
 
     border: #00332d solid 1px;
 }
@@ -214,17 +218,24 @@ button:hover {
     font-size: 3rem;
 }
 
-@media(max-width: 1000px) {
+@media(max-width: 1100px) {
     #titulo {
         font-size: 2rem;
     }
 
     .calculo {
         display: inline;
+        
+        margin: auto;
     }
 
-    .dados {
-        float: none;
+    #tabela{
+        margin: auto;
+    }
+
+    .dados{
+        margin: auto;
+        margin-top: 2rem;
     }
 
     .como-ehcalculado {
@@ -232,7 +243,5 @@ button:hover {
         margin-bottom: 2rem;
         
         width: 40rem;
-        
-        float: none;
     }
 }
