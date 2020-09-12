@@ -55,9 +55,6 @@ body {
     background: var(--cor-fundo);
     color: var(--cor-txt);
 
-    margin: auto;
-    width: 100%;
-
     border-bottom: var(--cor-borda) solid 1px;
 }
 
